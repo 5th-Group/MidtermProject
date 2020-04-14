@@ -1,16 +1,17 @@
-package exam;
+package midterm.exam.abundantNumber;
 
 import java.util.Scanner;
-public class Midterm {
-	static int abundantNumber(int n) {
+public class FindAbundantNumber {
+	public static int abundantNumber(int n) {
 		int sum = 0;
-		for(int i = 1; i <= n/2; i++) {
-			if(n % i == 0) {
-				sum += i;
+		for(int count = 1; count <= n/2; count++) {
+			if(n % count == 0) {
+				sum += count;
 			}
 		}
 		return sum;
 	}
+	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
@@ -23,21 +24,22 @@ public class Midterm {
 		} 
 		input.close();
 		
+		
 		if(number < 13) 
 		{
 			System.out.println("There are no abundant number smaller than " + number);
 		} else 
 		{	
-				for(int dem = 1; dem < number; dem++) 
+				for(int count = 1; count < number; count++) 
 				{	
-					if(abundantNumber(dem) > dem) 
+					if(abundantNumber(count) > count) 
 					{
 						if(!doneOnce) 
 						{
 							System.out.println("Abundant numbers smaller than " + number +":");
 							doneOnce = true;
 						}
-						System.out.print(dem + "  ");
+						System.out.print(count + "  ");
 					}
 				}
 		}
