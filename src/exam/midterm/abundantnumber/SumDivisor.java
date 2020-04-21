@@ -17,7 +17,7 @@ public class SumDivisor {
 			{
 					if(!doneOnce)
 					{
-						System.out.println("Abudant number smaller than " + number + ": ");
+						System.out.println("Abudant number(s) smaller than " + number + ": ");
 						doneOnce = true;
 					}
 				System.out.print(count + "  ");
