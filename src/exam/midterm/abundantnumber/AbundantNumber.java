@@ -1,7 +1,7 @@
 package exam.midterm.abundantnumber;
 
-public class SumDivisor {
-	public static void findSumDivisor(int number) 
+public class AbundantNumber {
+	public static void findAbundantNumber(int number) 
 	{
 		int sum = 0;
 		boolean doneOnce = false;

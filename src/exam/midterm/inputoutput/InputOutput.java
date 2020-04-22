@@ -1,7 +1,7 @@
 package exam.midterm.inputoutput;
 
 import java.util.Scanner;
-import exam.midterm.abundantnumber.SumDivisor;
+import exam.midterm.abundantnumber.AbundantNumber;
 public class InputOutput {
 	public static int Input(int number) 
 	{
@@ -31,7 +31,7 @@ public class InputOutput {
 				
 			} else 
 			{
-				SumDivisor.findSumDivisor(number);
+				AbundantNumber.findAbundantNumber(number);
 				
 			}
 			
